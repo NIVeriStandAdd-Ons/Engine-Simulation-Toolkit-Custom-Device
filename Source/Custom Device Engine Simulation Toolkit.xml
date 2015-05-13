@@ -74,7 +74,46 @@
 				<Path>Custom Devices\Engine Simulation Toolkit\Engine Simulation Toolkit Configuration.llb\EnableDisable - Right Click.vi</Path>
 			</Item2Launch>
 		</MenuItem>
+    <MenuItem>
+      <GUID>6fda8eb7-c462-4b17-a162-5a6899f6448d</GUID>
+      <Type>Action</Type>
+      <Name>
+        <eng>Reload Bitfile</eng>
+        <loc>Reload Bitfile</loc>
+      </Name>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Engine Simulation Toolkit\Engine Simulation Toolkit Configuration.llb\Refresh FPGA Bitfile.vi</Path>
+      </Item2Launch>
+    </MenuItem>
 		</RunTimeMenu>
+      <ButtonList>
+        <Button>
+          <ID>Reload Bitfile</ID>
+          <Glyph>
+            <Type>To Application Data Dir</Type>
+            <Path>System Explorer\Glyphs\Refresh.png</Path>
+          </Glyph>
+          <Type>Action</Type>
+          <ReferencedGUID>6fda8eb7-c462-4b17-a162-5a6899f6448d</ReferencedGUID>
+          <ButtonText>
+            <eng>Reload Bitfile</eng>
+            <loc>Reload Bitfile</loc>
+          </ButtonText>
+          <Caption>
+            <eng>Reload Bitfile</eng>
+            <loc>Reload Bitfile</loc>
+          </Caption>
+          <TipStrip>
+            <eng>Reload Bitfile</eng>
+            <loc>Reload Bitfile</loc>
+          </TipStrip>
+          <Documentation>
+            <eng>Reload Bitfile</eng>
+            <loc>Reload Bitfile</loc>
+          </Documentation>
+        </Button>
+      </ButtonList>
       <ActionVIOnLoad>
         <Type>To Common Doc Dir</Type>
         <Path>Custom Devices\Engine Simulation Toolkit\Engine Simulation Toolkit Configuration.llb\Main On Load Action VI.vi</Path>
