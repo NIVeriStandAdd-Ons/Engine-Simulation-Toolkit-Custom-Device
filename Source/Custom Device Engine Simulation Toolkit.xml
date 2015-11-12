@@ -41,6 +41,22 @@
 					<Path>Custom Devices\Engine Simulation Toolkit\c\Engine Simulation Toolkit Engine VxWorks.llb\RT Driver VI.vi</Path>
 				</Source>
 				<RealTimeSystemDestination>c:\ni-rt\NIVeriStand\Custom Devices\Engine Simulation Toolkit\Engine Simulation Toolkit Engine VxWorks.llb\RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>	
+			<Source>
+				<SupportedTarget>Linux_x64</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\Engine Simulation Toolkit\c\Engine Simulation Toolkit Engine Linux_x64.llb\RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\NIVeriStand\Custom Devices\Engine Simulation Toolkit\Engine Simulation Toolkit Engine Linux_x64.llb\RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+			<Source>
+				<SupportedTarget>Linux_32_ARM</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\Engine Simulation Toolkit\c\Engine Simulation Toolkit Engine Linux_32_ARM.llb\RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\NIVeriStand\Custom Devices\Engine Simulation Toolkit\Engine Simulation Toolkit Engine Linux_32_ARM.llb\RT Driver VI.vi</RealTimeSystemDestination>
 			</Source>			
 		</SourceDistribution>
 	</CustomDeviceVI>
