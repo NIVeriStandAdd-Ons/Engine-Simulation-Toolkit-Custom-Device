@@ -376,6 +376,10 @@
 			<Item Name="NationalInstruments.VeriStand.SystemDefinitionAPI" Type="Document" URL="NationalInstruments.VeriStand.SystemDefinitionAPI">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="NI VeriStand - Get Target Operating System.vi" Type="VI" URL="../../../../Desktop/NI VeriStand - Get Target Operating System.vi"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -402,7 +406,7 @@
 				<Property Name="Destination[2].path" Type="Path">../Built/Engine Simulation Toolkit/Engine Simulation Toolkit Configuration.llb</Property>
 				<Property Name="Destination[2].type" Type="Str">LLB</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{442886A0-D38F-43E0-A3BD-5ACB79681EB9}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{D5B23B9A-F939-4D4E-8B84-14AD374504F0}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Custom Device Engine Simulation Toolkit.xml</Property>
@@ -1034,9 +1038,9 @@ DirectoryIndex index.htm
 	</Item>
 	<Item Name="Linux_x64" Type="RT CompactRIO">
 		<Property Name="alias.name" Type="Str">Linux_x64</Property>
-		<Property Name="alias.value" Type="Str">0.0.0.0</Property>
-		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,x64;DeviceCode,77DD;</Property>
-		<Property Name="crio.ControllerPID" Type="Str">77DD</Property>
+		<Property Name="alias.value" Type="Str">172.22.11.2</Property>
+		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,x64;DeviceCode,7735;</Property>
+		<Property Name="crio.ControllerPID" Type="Str">7735</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
 		<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>
 		<Property Name="host.ResponsivenessCheckPingTimeout" Type="UInt">1000</Property>
@@ -1073,6 +1077,34 @@ DirectoryIndex index.htm
 		<Property Name="target.server.vi.access" Type="Str">+*</Property>
 		<Property Name="target.server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.vi.propertiesEnabled" Type="Bool">true</Property>
+		<Property Name="target.WebServer.Config" Type="Str">Listen 8000
+
+NI.ServerName default
+DocumentRoot "$LVSERVER_DOCROOT"
+TypesConfig "$LVSERVER_CONFIGROOT/mime.types"
+DirectoryIndex index.htm
+WorkerLimit 10
+InactivityTimeout 60
+
+LoadModulePath "$LVSERVER_MODULEPATHS"
+LoadModule LVAuth lvauthmodule
+LoadModule LVRFP lvrfpmodule
+
+#
+# Pipeline Definition
+#
+
+SetConnector netConnector
+
+AddHandler LVAuth
+AddHandler LVRFP
+
+AddHandler fileHandler ""
+
+AddOutputFilter chunkFilter
+
+
+</Property>
 		<Property Name="target.WebServer.Enabled" Type="Bool">false</Property>
 		<Property Name="target.WebServer.LogEnabled" Type="Bool">false</Property>
 		<Property Name="target.WebServer.LogPath" Type="Path">/c/ni-rt/system/www/www.log</Property>
@@ -1144,7 +1176,7 @@ DirectoryIndex index.htm
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E23E3E3B-F38B-42A3-AC09-47597AF7241D}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/c/Engine Simulation Toolkit Engine Linux_x64.llb</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">9</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/Engine Simulation Toolkit Engine Linux_x64.llb</Property>
@@ -1175,7 +1207,7 @@ DirectoryIndex index.htm
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{C4D299BC-5BE7-488F-AEC7-54EE03F87335}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/c/Engine Simulation Toolkit Engine Linux_x64.llb</Property>
-				<Property Name="Bld_version.build" Type="Int">5</Property>
+				<Property Name="Bld_version.build" Type="Int">6</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/Engine Simulation Toolkit Engine Linux_x64.llb</Property>
@@ -1187,18 +1219,14 @@ DirectoryIndex index.htm
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Source[0].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{6D38BEF7-7416-4361-80D9-BA1D9088C539}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{A430C0EA-CDDD-4F1E-BEBF-64D15607331D}</Property>
 				<Property Name="Source[0].properties[0].type" Type="Str">Run when opened</Property>
 				<Property Name="Source[0].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[0].properties[1].type" Type="Str">Allow debugging</Property>
 				<Property Name="Source[0].properties[1].value" Type="Bool">false</Property>
 				<Property Name="Source[0].properties[2].type" Type="Str">Auto error handling</Property>
 				<Property Name="Source[0].properties[2].value" Type="Bool">false</Property>
-				<Property Name="Source[0].properties[3].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[0].properties[3].value" Type="Bool">true</Property>
-				<Property Name="Source[0].properties[4].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[0].properties[4].value" Type="Bool">true</Property>
-				<Property Name="Source[0].propertiesCount" Type="Int">5</Property>
+				<Property Name="Source[0].propertiesCount" Type="Int">3</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/Linux_x64/Engine Simulation Toolkit Engine.lvlib/RT Driver VI.vi</Property>
@@ -1322,7 +1350,7 @@ DirectoryIndex index.htm
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{4FD8D612-B47E-4D5E-AACB-09C9E21F27D7}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/c/Engine Simulation Toolkit Engine Linux_32_ARM.llb</Property>
-				<Property Name="Bld_version.build" Type="Int">3</Property>
+				<Property Name="Bld_version.build" Type="Int">5</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/Engine Simulation Toolkit Engine Linux_32_ARM.llb</Property>
@@ -1334,18 +1362,14 @@ DirectoryIndex index.htm
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Source[0].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{5EF4282E-EA7B-4925-B45C-12819157CE82}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{9377551A-6A56-4740-B9B2-309F8A3E5888}</Property>
 				<Property Name="Source[0].properties[0].type" Type="Str">Run when opened</Property>
 				<Property Name="Source[0].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[0].properties[1].type" Type="Str">Auto error handling</Property>
 				<Property Name="Source[0].properties[1].value" Type="Bool">false</Property>
 				<Property Name="Source[0].properties[2].type" Type="Str">Allow debugging</Property>
 				<Property Name="Source[0].properties[2].value" Type="Bool">false</Property>
-				<Property Name="Source[0].properties[3].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[0].properties[3].value" Type="Bool">true</Property>
-				<Property Name="Source[0].properties[4].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[0].properties[4].value" Type="Bool">true</Property>
-				<Property Name="Source[0].propertiesCount" Type="Int">5</Property>
+				<Property Name="Source[0].propertiesCount" Type="Int">3</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/Linux_32_ARM/Engine Simulation Toolkit Engine.lvlib/RT Driver VI.vi</Property>

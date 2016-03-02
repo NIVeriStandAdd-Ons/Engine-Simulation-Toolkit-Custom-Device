@@ -182,7 +182,7 @@
 		<Item Name="Clear Error Code.vi" Type="VI" URL="../Clear Error Code.vi"/>
 		<Item Name="Engine VI Template.vit" Type="VI" URL="../Engine VI Template.vit"/>
 		<Item Name="Init Unused IP.vi" Type="VI" URL="../Init Unused IP.vi"/>
-		<Item Name="Initialize.vi" Type="VI" URL="../Initialize.vi"/>
+		<Item Name="Initialize ESTE.vi" Type="VI" URL="../Initialize ESTE.vi"/>
 	</Item>
 	<Item Name="RT Driver VI.vi" Type="VI" URL="../RT Driver VI.vi"/>
 </Library>
