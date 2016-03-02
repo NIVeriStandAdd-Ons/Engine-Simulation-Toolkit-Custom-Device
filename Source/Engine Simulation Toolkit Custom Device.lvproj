@@ -379,7 +379,7 @@
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="NI VeriStand - Get Target Operating System.vi" Type="VI" URL="../../../../Desktop/NI VeriStand - Get Target Operating System.vi"/>
+			<Item Name="NI VeriStand - Get Target Operating System.vi" Type="VI" URL="../System Explorer/NI VeriStand - Get Target Operating System.vi"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
