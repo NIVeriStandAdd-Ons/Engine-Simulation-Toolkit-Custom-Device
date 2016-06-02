@@ -4,7 +4,7 @@
 
 ### LabVIEW Version ###
 
-LabVIEW 2013
+LabVIEW 2015 SP1
 
 ### Built Availability ###
 
