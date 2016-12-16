@@ -16,7 +16,15 @@ This IP should be considered high quality. The Engine Simulation Toolkit Custom 
 
 ### Dependencies ###
 
+Build the packed library in the File Format.lvproj first (Source\File Format Classes)
+
 Requires the [LabVIEW FPGA Advanced Session Resources](https://decibel.ni.com/content/docs/DOC-35574)
+
+OpenG Array Library 4.1.1.14 (Or Later)
+
+OpenG Error Library 4.2.0.23 (Or Later)
+
+OpenG Array Library 4.2.0.21 (Or Later)
 
 ### License ###
 

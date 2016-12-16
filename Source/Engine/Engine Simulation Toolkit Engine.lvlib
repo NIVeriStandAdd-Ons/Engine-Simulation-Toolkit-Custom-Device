@@ -179,6 +179,10 @@
 			<Item Name="FPGA Refs.ctl" Type="VI" URL="../FPGA Refs.ctl"/>
 			<Item Name="RT Data.ctl" Type="VI" URL="../RT Data.ctl"/>
 		</Item>
+		<Item Name="Utility" Type="Folder">
+			<Item Name="RT_Format Error.vi" Type="VI" URL="../RT_Format Error.vi"/>
+			<Item Name="RT_Format Message String.vi" Type="VI" URL="../RT_Format Message String.vi"/>
+		</Item>
 		<Item Name="Clear Error Code.vi" Type="VI" URL="../Clear Error Code.vi"/>
 		<Item Name="Engine VI Template.vit" Type="VI" URL="../Engine VI Template.vit"/>
 		<Item Name="Init Unused IP.vi" Type="VI" URL="../Init Unused IP.vi"/>
