@@ -27,3 +27,16 @@ name = 'Engine Libraries'
 type = 'lvBuildSpecAllTargets'
 project = '{cd}'
 build_spec = 'Engine Release'
+
+[package]
+type = 'nipkg'
+name = 'engine-simulation-toolkit-custom-device-{veristand_version}'
+dev_xml_path = 'Source\Custom Device Engine Simulation Toolkit.xml'
+install_destination = 'documents\National Instruments\NI VeriStand {veristand_version}\Custom Devices'
+
+[[release.steps]]
+name = 'Master Release'
+type = 'githubRelease'
+2015_release_branches = ["master",]
+2016_release_branches = ["master",]
+2017_release_branches = ["master",]
