@@ -1,6 +1,6 @@
 [archive]
 build_output_dir = 'Built'
-archive_location = '\\us-aus-hilbuild\niveristandadd-ons\custom devices\engine_sim_toolkit_custom_device'
+archive_location = '\\us-aus-hilbuild\builds\niveristandadd-ons\custom devices\engine_sim_toolkit_custom_device'
 
 [projects.cd]
 path = 'Source\Engine Simulation Toolkit Custom Device.lvproj'
