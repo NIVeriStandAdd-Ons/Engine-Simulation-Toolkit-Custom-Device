@@ -1,0 +1,15 @@
+Package: engine-simulation-toolkit-custom-device-{veristand_version}
+Version: {nipkg_version}
+Architecture: windows_x64
+Maintainer: National Instruments <support@ni.com>
+XB-Plugin: file
+Description:  This add-on allows a user to integrate the NI Engine Simulation Toolkit with NI VeriStand for simulating engine I/O. 
+XB-Eula:  
+Priority: standard
+Homepage: http://www.ni.com
+XB-LanguageSupport: en
+XB-UserVisible: yes
+Section: Add-Ons
+XB-DisplayVersion: 1.0
+XB-DisplayName: Engine Simulation Toolkit Custom Device for VeriStand {veristand_version}
+Depends: 
