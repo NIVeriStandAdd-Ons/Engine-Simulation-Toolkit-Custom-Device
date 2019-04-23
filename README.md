@@ -1,3 +1,7 @@
+**This repository has been deprecated and is no longer maintained. For future releases, please go to:**
+
+https://github.com/ni/niveristand-scan-engine-ethercat-custom-device
+
 ## Engine Simulation Toolkit Custom Device ##
 
 **Engine Simulation Toolkit Custom Device** is a insert description of IP
