@@ -1,6 +1,6 @@
 **This repository has been deprecated and is no longer maintained. For future releases, please go to:**
 
-https://github.com/ni/niveristand-scan-engine-ethercat-custom-device
+https://github.com/ni/niveristand-engine-simulation-toolkit-custom-device
 
 ## Engine Simulation Toolkit Custom Device ##
 
